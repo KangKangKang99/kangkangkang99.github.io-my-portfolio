@@ -13,5 +13,12 @@
       "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
       }
+    },
+    "tailwindCSS.includeLanguages": {
+      "javascript": "javascript",
+      "html": "HTML"
+    },
+    "editor.quickSuggestions": {
+      "strings": true
     }
   }

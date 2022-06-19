@@ -29,11 +29,22 @@ module.exports = {
         'camelcase': 'error',
         'spaced-comment': 'error',
         'quotes': ['error', 'single'],
-        'no-duplicate-imports': 'error'
+        'no-duplicate-imports': 'error',
+        'semi' : ['error', 'always'],
+        'no-console': 1,
+        'no-empty': [2, { 'allowEmptyCatch': true }],
+        'prefer-const': 1,
+        'require-await': 2,
+        'no-await-in-loop': 2,
+        'no-unused-vars': ['warn'],
     },
     'settings': {
-        'import/resolver': {
-          'typescript': {}
+        'import/resolver': { 
+          'typescript': {},
+          'node': {
+            'extensions': ['.ts', '.tsx'],
+            'moduleDirectory': ['src', 'node_modules']
+          }
         }
     }
-}
+};
