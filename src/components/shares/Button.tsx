@@ -1,5 +1,4 @@
-import { Button } from 'antd';
-import { ReactElement, ReactNode } from 'react';
+import { ReactElement } from 'react';
 
 import { enumButtonStyle } from '#Configs/enum';
 import { IconButtonLoading } from '#Components/icons';
@@ -18,7 +17,7 @@ export const ShareButton: React.FC<IProps> = (props: IProps) => {
         const type = props.type;
         let color: string = '';
         const shape =
-            'py-1.5 px-2.5 mr-2 mb-2 font-medium text-sm rounded focus:ring-2 focus:outline-none';
+            'py-1.5 px-2.5 font-medium text-sm rounded focus:ring-2 focus:outline-none active:scale-95';
         switch (type) {
             case enumButtonStyle.ALTERNATIVE:
                 color =

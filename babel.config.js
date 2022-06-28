@@ -12,6 +12,8 @@ module.exports = {
             '#Stores': './scr/stores',
             '#Configs': './src/configs',
             '#Layouts': './src/layouts',
+            '#Locales': './src/locales',
+            '#Utils': './src/utils',
           }
         }
       ],

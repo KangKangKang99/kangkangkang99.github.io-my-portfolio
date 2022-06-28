@@ -1,4 +1,3 @@
 export * from './home';
-export * from './Portfolio';
-
- 
+export * from './explode';
+export * from './games';

@@ -11,6 +11,8 @@ module.exports = {
       '#Stores': path.resolve(__dirname, 'src/stores'),
       '#Configs': path.resolve(__dirname, 'src/configs'),
       '#Layouts': path.resolve(__dirname, 'src/layouts'),
+      '#Locales': path.resolve(__dirname, 'src/locales'),
+      '#Utils': path.resolve(__dirname, 'src/utils'),
     }
   },
-};
+}; 

@@ -1,12 +1,37 @@
-import { PATH_PAGE_HOME, PATH_PAGE_PORTFOLIO } from '#Configs/constants';
+import { PATH_PAGE_EXPLODE, PATH_PAGE_HOME, PATH_PAGE_GAMES } from '#Configs/constants';
 import { IRouter } from '#Configs/interfaces';
 import { enumRoutePermission } from '#Configs/enum';
-import { PageHome, PagePortfolio } from '#Pages/index';
 import { LayoutApp } from '#Layouts/index';
+import { PageGames } from '#Pages/games';
+import { PageHome, PageExplode, PageGameMine } from '#Pages/index';
 
-export const routes : IRouter[] = [ 
+export const routes: IRouter[] = [
     // home
-    {path: PATH_PAGE_HOME.index, Component: PageHome,  permission: enumRoutePermission.GUEST, Layout: LayoutApp },
-    // portfolio
-    {path: PATH_PAGE_PORTFOLIO.index, Component: PagePortfolio, permission: enumRoutePermission.GUEST },
-];  
+    {
+        path: PATH_PAGE_HOME.index,
+        Component: PageHome,
+        Layout: LayoutApp,
+        permission: enumRoutePermission.GUEST,
+    },
+    // explode
+    {
+        path: PATH_PAGE_EXPLODE.index,
+        Component: PageExplode,
+        Layout: LayoutApp,
+        permission: enumRoutePermission.GUEST,
+    },
+    // games
+    {
+        path: PATH_PAGE_GAMES.index,
+        Component: PageGames,
+        Layout: LayoutApp,
+        permission: enumRoutePermission.GUEST,
+    },
+    // games/mine
+    {
+        path: PATH_PAGE_GAMES.mine,
+        Component: PageGameMine,
+        Layout: LayoutApp,
+        permission: enumRoutePermission.GUEST,
+    },
+];
