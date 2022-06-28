@@ -26,7 +26,9 @@
       "#Components/*" : ["./components/*"],
       "#Stores/*" : ["./stores/*"],
       "#Configs/*" : ["./configs/*"] ,
-      "#Layouts/*" : ["./layouts/*"] 
+      "#Layouts/*" : ["./layouts/*"] ,
+      "#Locales/*" : ["./locales/*"] ,  
+      "#Utils/*" : ["./utils/*"] 
     },
   },
   "include": [

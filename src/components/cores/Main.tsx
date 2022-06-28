@@ -36,11 +36,10 @@ export const ModuleMain: React.FC = () => {
                             <Component />
                         </Layout>
                     ) : (
-                        <div>
+                        <div> 
                             <Component />
                         </div>
                     );
-
                     return <Route key={index} path={path} element={element} />;
                 })}
             </Routes>
